@@ -56,6 +56,9 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Kernel
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Kernel Modules
 PRODUCT_PACKAGES += \
     fsck.f2fs.vendor_ramdisk \
