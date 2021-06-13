@@ -405,7 +405,6 @@ on boot
 on early-fs
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
     mount_all /vendor/etc/fstab.${ro.hardware} --late
     swapon_all /vendor/etc/fstab.${ro.hardware}
 
