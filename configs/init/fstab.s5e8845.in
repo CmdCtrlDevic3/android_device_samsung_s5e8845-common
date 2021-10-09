@@ -34,4 +34,4 @@ product        /product        erofs    ro                         slotselect,wa
 # VOLD
 #<src>                                             <mnt_point>         <type>    <mnt_flags and options>    <fs_mgr_flags>
 /devices/platform/13200000.usb*                    auto                vfat      default                    voldmanaged=usb:auto
-/devices/platform/12be0000.dwmmc2/mmc_host*        auto                auto      default                    voldmanaged=sdcard:auto
+/devices/platform/12be0000.dwmmc2/mmc_host*        auto                auto      default                    voldmanaged=sdcard:auto,encryptable=userdata
