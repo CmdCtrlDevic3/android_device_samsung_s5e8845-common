@@ -42,6 +42,7 @@ media.c2.dmabuf.padding=512
 debug.c2.use_dmabufheaps=1
 debug.stagefright.ccodec_delayed_params=1
 ro.vendor.gpu.dataspace=1
+vendor.media.omx=0
 
 # Graphics
 ro.hardware.egl=angle
