@@ -48,6 +48,7 @@ vendor.media.omx=0
 dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
+debug.renderengine.backend=skiavkthreaded
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.show_refresh_rate_overlay_render_rate=true
