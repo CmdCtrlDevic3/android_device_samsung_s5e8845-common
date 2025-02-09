@@ -3,16 +3,42 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+
+genrule {
+    name: "gen_fstab_s5e8845.recovery",
+    srcs: ["fstab.s5e8845.in"],
+    cmd: `grep -Ev 'efs|product|system_|vbmeta|vendor' $(in) |
+          sed -E 's/,?\w*mount,?|,fileencryption.*|recoveryonly,//g' |
+          sed 's/,inlinecrypt/            /' |
+          sed 's/recoveryonly/defaults/g' > $(out)`,
+    out: ["recovery.fstab"],
+}
+
+genrule {
+    name: "gen_fstab_s5e8845.vendor",
+    srcs: ["fstab.s5e8845.in"],
+    cmd: "grep -Ev ' first_stage_mount|recoveryonly' $(in) > $(out)",
+    out: ["fstab.s5e8845"],
+}
+
+genrule {
+    name: "gen_fstab_s5e8845.vendor_ramdisk",
+    srcs: ["fstab.s5e8845.in"],
+    cmd: "grep -E '#|first_stage_mount' $(in) > $(out)",
+    out: ["fstab.s5e8845"],
+}
+
 prebuilt_etc {
-    name: "fstab.s5e8845",
-    src: "fstab.s5e8845",
+    name: "fstab.s5e8845.vendor",
+    src: ":gen_fstab_s5e8845.vendor",
+    filename: "fstab.s5e8845",
     vendor: true,
 }
 
 prebuilt_root {
     name: "fstab.s5e8845.vendor_ramdisk",
-    src: "fstab.s5e8845",
-    filename_from_src: true,
+    src: ":gen_fstab_s5e8845.vendor_ramdisk",
+    filename: "fstab.s5e8845",
     vendor_ramdisk: true,
     install_in_root: true,
 }

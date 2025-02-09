@@ -91,7 +91,7 @@ TARGET_SOC := s5e8845
 include hardware/samsung_slsi-linaro/config/BoardConfig8845.mk
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.s5e8845
+TARGET_RECOVERY_FSTAB_GENRULE := gen_fstab_s5e8845.recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
