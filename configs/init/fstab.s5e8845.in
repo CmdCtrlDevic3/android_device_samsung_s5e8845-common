@@ -27,6 +27,10 @@ product        /product        erofs    ro                         slotselect,wa
 /dev/block/by-name/cpefs              /mnt/vendor/cpefs   ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic                           wait,check,nofail
 /dev/block/by-name/cache              /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic                           wait,formattable,check
 
+# Zram
+#<src>                                <mnt_point>         <type>    <mnt_flags and options>    <fs_mgr_flags>
+/dev/block/zram0                      none                swap      defaults                   zramsize=2147483648,auto_configure
+
 # VOLD
 #<src>                                             <mnt_point>         <type>    <mnt_flags and options>    <fs_mgr_flags>
 /devices/platform/13200000.usb*                    auto                vfat      default                    voldmanaged=usb:auto
