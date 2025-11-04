@@ -56,6 +56,15 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.s5e8845.vendor \
+    fstab.s5e8845.vendor_ramdisk \
+    init.recovery.s5e8845.rc \
+    init.s5e8845.rc \
+    init.samsung.rc \
+    ueventd.s5e8845.rc
+
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
