@@ -35,6 +35,7 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlk
 # DTB
 BOARD_DTBO_CFG := $(CONNON_PATH)/configs/kernel/$(TARGET_DEVICE).cfg
 BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_DTB_LIST_WILDCARD := exynos/s5e8845
 
 # Filesystem
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -58,8 +59,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/s5e8845
 TARGET_KERNEL_CONFIG := s5e8845_defconfig $(TARGET_DEVICE).config
 
 # Kernel Modules
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/configs/kernel/$(TARGET_DEVICE).load))
-BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/configs/kernel/modules.load.system_dlkm))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/configs/modules/$(TARGET_DEVICE).load))
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/configs/modules/modules.load.system_dlkm))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := scsc_wlan.ko cfg80211.ko
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 SYSTEM_KERNEL_MODULES := $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)
