@@ -14,7 +14,6 @@ AB_OTA_PARTITIONS := \
     product \
     vbmeta \
     system \
-    vbmeta_system \
     vendor \
     vendor_dlkm
 
