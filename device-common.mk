@@ -3,6 +3,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel Modules
+PRODUCT_PACKAGES += \
+    linker.vendor_ramdisk \
+    toolbox.vendor_ramdisk \
+    fsck.f2fs.vendor_ramdisk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
