@@ -5,6 +5,19 @@
 
 COMMON_PATH := device/samsung/s5e8845-common
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    vendor_boot \
+    dtbo \
+    odm \
+    product \
+    vbmeta \
+    system \
+    vbmeta_system \
+    vendor \
+    vendor_dlkm
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
