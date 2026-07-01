@@ -24,6 +24,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Kernel Modules
+PRODUCT_PACKAGES += \
+    fsck.f2fs.vendor_ramdisk \
+    linker.vendor_ramdisk \
+    toolbox.vendor_ramdisk \
+
 # Permissions
 PRODUCT_PACKAGES += handheld_core_hardware.prebuilt.xml
 
