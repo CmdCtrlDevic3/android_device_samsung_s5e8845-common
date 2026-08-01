@@ -1,2 +1,7 @@
 # All unpinned blobs are from A556BXXSGDZG2
 # Vendor security patch level 2026-07-05
+
+# Keymint
+vendor/lib64/libskeymint_cli.so
+vendor/lib64/libskeymint10device.so
+vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so

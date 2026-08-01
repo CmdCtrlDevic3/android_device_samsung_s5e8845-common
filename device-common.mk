@@ -74,6 +74,9 @@ PRODUCT_PACKAGES += \
     linker.vendor_ramdisk \
     toolbox.vendor_ramdisk \
 
+# Keymint
+PRODUCT_PACKAGES += android.hardware.security.keymint-service.samsung
+
 # Permissions
 PRODUCT_PACKAGES += handheld_core_hardware.prebuilt.xml
 
