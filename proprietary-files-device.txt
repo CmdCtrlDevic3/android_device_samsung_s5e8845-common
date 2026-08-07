@@ -1,0 +1,2 @@
+# All blobs are from the release mentioned in
+# device's proprietary-files.txt
