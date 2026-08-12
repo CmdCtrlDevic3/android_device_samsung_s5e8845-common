@@ -84,6 +84,10 @@ PRODUCT_PACKAGES += handheld_core_hardware.prebuilt.xml
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# TEEgris
+PRODUCT_PACKAGES += \
+    hermesd
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
