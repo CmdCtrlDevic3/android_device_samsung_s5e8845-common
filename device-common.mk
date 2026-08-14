@@ -21,6 +21,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Permissions
 PRODUCT_PACKAGES += handheld_core_hardware.prebuilt.xml
 
