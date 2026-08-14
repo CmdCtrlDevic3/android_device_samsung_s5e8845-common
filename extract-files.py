@@ -72,6 +72,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('-service', '-service.samsung'),
     (
+        'vendor/lib64/hw/vulkan.samsung.so',
+        'vendor/lib64/libSGPUOpenCL.so',
+        'vendor/lib64/egl/libGLESv2_samsung.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getId')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('ANativeWindow_getFormat'),
+    (
         'vendor/lib64/libalsautils_sec.so',
         'vendor/lib64/libaudioroute_samsung.so',
     ): blob_fixup()
