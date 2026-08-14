@@ -73,6 +73,7 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := erd8845
 TARGET_BOOTLOADER_BOARD_NAME := s5e8845
 TARGET_SOC := s5e8845
+include hardware/samsung_slsi-linaro/config/BoardConfig8845.mk
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.s5e8845

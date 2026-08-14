@@ -18,6 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/media_vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Call Samsung LSI board support package makefiles
+$(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
+$(call inherit-product, hardware/samsung_slsi-linaro/graphics/base/hwcomposer_property.mk)
+
 # Inherit common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 

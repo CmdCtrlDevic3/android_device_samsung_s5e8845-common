@@ -12,6 +12,9 @@ from extract_utils.main import (
 namespace_imports = [
     'device/samsung/s5e8845-common',
     'vendor/samsung/s5e8845-common',
+    'hardware/samsung_slsi-linaro/exynos',
+    'hardware/samsung_slsi-linaro/graphics',
+    'hardware/samsung_slsi-linaro/sgpu',
 ]
 
 module = ExtractUtilsModule(
