@@ -1,6 +1,13 @@
 # All unpinned blobs are from A556BXXSGDZG2
 # Vendor security patch level 2026-07-05
 
+# TEEgris
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris.rc
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service
 vendor/etc/init/android.hardware.gatekeeper-service.rc

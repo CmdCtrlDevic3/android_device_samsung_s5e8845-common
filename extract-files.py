@@ -10,6 +10,11 @@ from extract_utils.fixups_blob import (
     run_cmd
 )
 
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -64,6 +69,8 @@ module = ExtractUtilsModule(
     's5e8845-common',
     'samsung',
     namespace_imports=namespace_imports,
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
 )
 
 if __name__ == '__main__':
