@@ -70,6 +70,10 @@ vendor/etc/dqe/calib_data_eyetemp.xml
 vendor/etc/dqe/calib_data_colortemp.xml
 vendor/etc/dqe/calib_data_bypass.xml
 
+# Fingerprint - Dependencies
+vendor/etc/init/init.fingerprint.rc
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
+
 # Camera
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so

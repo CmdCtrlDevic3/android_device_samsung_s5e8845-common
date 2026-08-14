@@ -50,6 +50,10 @@ vendor/firmware/setfile_imx906.bin
 # Codec2
 vendor/etc/media_profiles_V1_0.xml
 
+# Fingerprint - Dependencies
+vendor/lib64/libsfp_sensor.so
+vendor/lib64/libsfp_teegw.so
+
 # Firmware
 vendor/firmware/rxse.bin
 vendor/firmware/secnvm/k250a_fw_image.manifest
