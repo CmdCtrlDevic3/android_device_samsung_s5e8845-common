@@ -15,6 +15,13 @@ vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
 
+# Camera
+vendor/lib64/hw/camera.s5e8845.so
+vendor/lib64/libIRTA.so
+vendor/lib64/libeis_core.so
+vendor/lib64/libeis_interface.so
+vendor/lib64/libsec2lsi_conversion.so
+
 # Codec2
 vendor/etc/media_profiles_V1_0.xml
 
