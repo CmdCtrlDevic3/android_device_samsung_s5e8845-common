@@ -92,6 +92,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('e7 89 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::enable m_sendRequest()
         .sig_replace('92 89 01 94', '1f 20 03 d5') # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
         .add_needed('libui_shim.so'),
+    'vendor/lib64/libsensorlistener.so': blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
