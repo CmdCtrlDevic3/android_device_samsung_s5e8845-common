@@ -81,6 +81,11 @@ ro.egl.blobcache.multifile_limit=536870912
 # Power
 vendor.powerhal.disp.idle_support=false
 
+# Fingerprint
+ro.vendor.fingerprint.type=udfps_optical
+ro.vendor.fingerprint.force_calibrate=1
+ro.vendor.fingerprint.request_touch_event=true
+
 # Weaver
 vendor.s.securehw.available=false
 vendor.s.securenvm.available=false

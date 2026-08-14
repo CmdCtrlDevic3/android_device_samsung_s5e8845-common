@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
@@ -187,6 +191,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth_le.prebuilt.xml \
     android.hardware.camera.flash-autofocus.prebuilt.xml \
     android.hardware.camera.full.prebuilt.xml \
+    android.hardware.fingerprint.prebuilt.xml \
     android.hardware.location.gps.prebuilt.xml \
     android.hardware.hardware_keystore_V3.xml \
     android.hardware.sensor.accelerometer.prebuilt.xml \
