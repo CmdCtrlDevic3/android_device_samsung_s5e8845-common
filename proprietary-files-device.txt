@@ -1,5 +1,8 @@
 # Vendor security patch level 2026-07-05
 
+# Keymint
+vendor/lib64/libskeymint_cli.so
+
 # Weaver
 vendor/bin/hermesd
 vendor/lib64/libhermes.so

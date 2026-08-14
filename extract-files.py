@@ -21,6 +21,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hermesd': blob_fixup()
         .binary_regex_replace(b'security.securehw.available', b'vendor.s.securehw.available')
         .binary_regex_replace(b'security.securenvm.available', b'vendor.s.securenvm.available'),
+    'vendor/lib64/libskeymint_cli.so': blob_fixup()
+        .add_needed('libshim_crypto.so'),
+    'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
+        .regex_replace('-service', '-service.samsung'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

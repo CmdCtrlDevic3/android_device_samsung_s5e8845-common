@@ -1,6 +1,12 @@
 # All unpinned blobs are from A556BXXSGDZG2
 # Vendor security patch level 2026-07-05
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
+vendor/lib64/libskeymint10device.so
+vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so
+
 # Weaver
 vendor/etc/init/hermesd.rc
 vendor/lib64/libhermes_bdbridge.so

@@ -66,6 +66,12 @@ PRODUCT_SOONG_NAMESPACES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore_V3.xml
+
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/s5e9925-common/s5e8845-common-vendor.mk)
 
