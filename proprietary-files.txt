@@ -30,6 +30,14 @@ vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/soundfx/libmyspace.so
 
+# Audio - Hotword
+product/etc/permissions/privapp-permissions-google-product.xml
+product/etc/sysconfig/asi_features.xml
+product/etc/sysconfig/sysconfig_contextual_search.xml
+product/etc/sysconfig/sysconfig_gemini.xml
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Audio - Sound Trigger
 vendor/etc/sound_trigger_info.xml
 vendor/lib64/hw/sound_trigger.primary.s5e8845.so
