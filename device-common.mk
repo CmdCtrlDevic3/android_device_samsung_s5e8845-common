@@ -172,6 +172,12 @@ PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.pixel \
+    thermal_info_config.json \
+    thermal_symlinks
+
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/s5e9925-common/s5e8845-common-vendor.mk)
 
