@@ -148,7 +148,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/samsung
+    hardware/samsung \
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
 
 # Linker
 PRODUCT_PACKAGES += \
@@ -192,6 +193,12 @@ PRODUCT_PACKAGES += task_profiles.json.s5e8845
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
     powerhint.json
+
+# RIL
+PRODUCT_PACKAGES += \
+    cbd
+
+$(call soong_config_set,cbd,protocol,sipc)
 
 # Thermal
 PRODUCT_PACKAGES += \
