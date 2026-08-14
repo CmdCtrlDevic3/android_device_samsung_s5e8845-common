@@ -15,6 +15,9 @@ vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
 
+# Codec2
+vendor/etc/media_profiles_V1_0.xml
+
 # Keymint
 vendor/lib64/libskeymint_cli.so
 

@@ -48,6 +48,11 @@ PRODUCT_PACKAGES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Codec2
+PRODUCT_PACKAGES += \
+    media_codecs_c2.xml \
+    media_codecs_performance_c2.xml \
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
