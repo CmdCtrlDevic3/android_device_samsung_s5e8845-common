@@ -202,3 +202,23 @@ vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so
 vendor/etc/vintf/manifest/iweaver_aidl_v2_manifest.xml
 vendor/lib64/android.hardware.weaver@1.0.so:vendor/lib64/android.weaver@1.0.so;FIX_SONAME
+
+# Wi-Fi
+vendor/bin/init.insmod.sh
+vendor/etc/init.insmod.vendor_dlkm.cfg
+vendor/etc/init/init.exynos.wifi.rc
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_slsi.rc
+vendor/etc/wifi/init.insmod.wifi.cfg
+
+# Wi-Fi - Firmware
+vendor/firmware/wifi/hydra_config.sdb
+vendor/firmware/wifi/mx140/build_id.txt
+vendor/firmware/wifi/mx140/wpal
+vendor/firmware/wifi/mx140_bt.hcf
+vendor/firmware/wifi/mx140_common.hcf
+vendor/firmware/wifi/mx140_wlan.hcf
+vendor/firmware/wifi/mx140_wlan_sw.hcf
+vendor/firmware/wifi/mx140_wlan_t.hcf
+vendor/firmware/wifi/mx140_wlan_t_sw.hcf
+vendor/firmware/wifi/platform.txt
