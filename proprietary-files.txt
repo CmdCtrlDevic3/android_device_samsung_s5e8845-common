@@ -1,6 +1,39 @@
 # All unpinned blobs are from A556BXXSGDZG2
 # Vendor security patch level 2026-07-05
 
+# Audio - Main
+vendor/etc/audio_board_info.xml
+vendor/etc/dolby/dax-default.xml
+vendor/lib64/hw/audio.primary.s5e8845.so
+vendor/lib64/libSamsungPostProcessConvertor.so
+vendor/lib64/lib_SamsungRec_07010.so
+vendor/lib64/lib_SoundAlive_SRC384_ver330.so
+vendor/lib64/lib_soundaliveresampler.so
+vendor/lib64/libalsautils_sec.so
+vendor/lib64/libaudioparamupdate.so
+vendor/lib64/libaudioproxy2.so
+vendor/lib64/liblastaboxmsg.so
+vendor/lib64/libsecaudiolevel.so
+vendor/lib64/libsehbluetooth_audio_session_aidl.so
+vendor/lib64/libspeakercalibration.so
+vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V2-ndk.so
+vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
+vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_samsung.so;FIX_SONAME
+vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa_samsung.so;FIX_SONAME
+
+# Audio - Effects
+vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib64/soundfx/libmyspace.so
+
+# Audio - Sound Trigger
+vendor/etc/sound_trigger_info.xml
+vendor/lib64/hw/sound_trigger.primary.s5e8845.so
+
 # TEEgris
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon

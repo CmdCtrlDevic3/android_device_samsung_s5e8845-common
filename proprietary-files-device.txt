@@ -1,5 +1,20 @@
 # Vendor security patch level 2026-07-05
 
+# Audio - Main
+vendor/etc/SoundBoosterParam.txt
+vendor/etc/mixer_gains.xml
+vendor/etc/mixer_paths.xml
+vendor/lib64/libaudio-ril.so
+vendor/lib64/librecordalive.so
+vendor/lib64/libsecaudioinfo.so
+
+# Audio - Effects
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libaudiosaplus_sec.so
+vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswspatializer.so
+
 # Keymint
 vendor/lib64/libskeymint_cli.so
 
