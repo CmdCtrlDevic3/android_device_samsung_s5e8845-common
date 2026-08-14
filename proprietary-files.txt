@@ -128,6 +128,9 @@ vendor/bin/hw/android.hardware.gatekeeper-service
 vendor/etc/init/android.hardware.gatekeeper-service.rc
 vendor/lib64/hw/gatekeeper.s5e8845.so
 
+# GNSS
+vendor/etc/init/init.gps.rc
+
 # Graphics
 vendor/etc/Khronos/OpenCL/samsung.icd;SYMLINK=vendor/Khronos/OpenCL/vendors/samsung.icd
 vendor/lib64/egl/libEGL_samsung.so

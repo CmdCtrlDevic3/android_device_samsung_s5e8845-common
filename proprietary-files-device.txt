@@ -59,6 +59,26 @@ vendor/firmware/rxse.bin
 vendor/firmware/secnvm/k250a_fw_image.manifest
 vendor/firmware/txse1.bin
 
+# GNSS
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gps.rose.sh:vendor/bin/hw/gps.sh
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gpsd_K44:vendor/bin/hw/gpsd_K44
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/vendor.samsung.hardware.gnss.lsi.rose-service:vendor/bin/hw/vendor.samsung.hardware.gnss-service
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/ca.pem:vendor/etc/gnss/ca.pem
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.cfg:vendor/etc/gnss/gps.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.dcm.cfg:vendor/etc/gnss/gps.dcm.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.dcm.debug.cfg:vendor/etc/gnss/gps.dcm.debug.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.dcm.issuetracker.cfg:vendor/etc/gnss/gps.dcm.issuetracker.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.debug.cfg:vendor/etc/gnss/gps.debug.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.issuetracker.cfg:vendor/etc/gnss/gps.issuetracker.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.kdi.cfg:vendor/etc/gnss/gps.kdi.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.kdi.debug.cfg:vendor/etc/gnss/gps.kdi.debug.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.kdi.issuetracker.cfg:vendor/etc/gnss/gps.kdi.issuetracker.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/init.gps.rose.apex.sh.rc:vendor/etc/init/init.gps.rose.rc
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/vendor.samsung.hardware.gnss.lsi.rose-service.rc:vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/gnss_aidl_lib.so:vendor/lib64/gnss_aidl_lib.so
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/libwrappergps.so:vendor/lib64/libwrappergps.so
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/vendor.samsung.hardware.gnss-V3-ndk.so:vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+
 # Keymint
 vendor/lib64/libskeymint_cli.so
 
