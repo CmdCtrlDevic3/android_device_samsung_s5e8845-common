@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/samsung
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
