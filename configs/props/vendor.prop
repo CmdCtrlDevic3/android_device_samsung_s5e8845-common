@@ -31,6 +31,10 @@ bluetooth.profile.bap.broadcast.assist.enabled=true
 bluetooth.profile.hap.client.enabled=true
 bluetooth.profile.bas.client.enabled=true
 
+# Codec2
+media.c2.hal.selection=aidl
+
+# Graphics
 ro.hardware.egl=angle
 ro.hardware.vulkan=samsung
 ro.opengles.version=196610
