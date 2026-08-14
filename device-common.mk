@@ -170,6 +170,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth_le.prebuilt.xml \
     android.hardware.camera.flash-autofocus.prebuilt.xml \
     android.hardware.camera.full.prebuilt.xml \
+    android.hardware.location.gps.prebuilt.xml \
     android.hardware.hardware_keystore_V3.xml \
     android.hardware.sensor.accelerometer.prebuilt.xml \
     android.hardware.sensor.compass.prebuilt.xml \
