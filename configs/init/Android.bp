@@ -1,0 +1,53 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.s5e8845",
+    src: "fstab.s5e8845",
+    vendor: true,
+}
+
+prebuilt_root {
+    name: "fstab.s5e8845.vendor_ramdisk",
+    src: "fstab.s5e8845",
+    filename_from_src: true,
+    vendor_ramdisk: true,
+    install_in_root: true,
+}
+
+prebuilt_etc {
+    name: "init.s5e8845.rc",
+    relative_install_path: "init",
+    src: "init.s5e8845.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.s5e8845.usb.rc",
+    relative_install_path: "init",
+    src: "init.s5e8845.usb.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.samsung.rc",
+    relative_install_path: "init",
+    src: "init.samsung.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.s5e8845.rc",
+    recovery: true,
+    relative_install_path: "init",
+    src: "init.recovery.s5e8845.rc",
+}
+
+prebuilt_etc {
+    name: "ueventd.s5e8845.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.s5e8845.rc",
+    vendor: true,
+}

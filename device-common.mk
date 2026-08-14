@@ -18,6 +18,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Virtualization service
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.s5e8845 \
+    fstab.s5e8845.vendor_ramdisk \
+    init.recovery.s5e8845.rc \
+    init.s5e8845.rc \
+    init.samsung.rc \
+    ueventd.s5e8845.rc
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
