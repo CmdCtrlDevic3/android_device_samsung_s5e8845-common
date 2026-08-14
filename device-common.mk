@@ -239,6 +239,12 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.samsung \
     init.s5e8845.usb.rc
 
+$(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
