@@ -94,6 +94,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libui_shim.so'),
     'vendor/lib64/libsensorlistener.so': blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
+    'vendor/lib64/libsec-ril.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-full-21.7.so', 'libprotobuf-cpp-full-21.12.so')
+        .sig_replace(
+            '80 0e 40 f9 e1 03 16 aa 82 0c 80 52 e3 03 15 aa 24 00 80 52',
+            '80 0e 40 f9 e1 03 16 aa 82 0c 80 52 03 00 80 d2 24 00 80 52'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
