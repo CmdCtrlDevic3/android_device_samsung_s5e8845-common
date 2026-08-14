@@ -52,6 +52,10 @@ TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.composer.hwc3-service.slsi
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
