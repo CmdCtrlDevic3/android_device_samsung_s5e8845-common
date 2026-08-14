@@ -88,6 +88,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libaudioroute_samsung.so',
     ): blob_fixup()
         .replace_needed('libtinyalsa.so', 'libtinyalsa_samsung.so'),
+    'vendor/lib64/hw/camera.s5e8845.so': blob_fixup()
+       .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
