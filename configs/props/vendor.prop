@@ -50,6 +50,9 @@ ro.hardware.vulkan=samsung
 ro.opengles.version=196610
 vendor.hwc.drm.device=/dev/dri/card1
 
+# Power
+vendor.powerhal.disp.idle_support=false
+
 # Weaver
 vendor.s.securehw.available=false
 vendor.s.securenvm.available=false
