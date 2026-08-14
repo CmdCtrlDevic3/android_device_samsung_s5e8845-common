@@ -17,6 +17,12 @@ namespace_imports = [
     'hardware/samsung_slsi-linaro/sgpu',
 ]
 
+blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hermesd': blob_fixup()
+        .binary_regex_replace(b'security.securehw.available', b'vendor.s.securehw.available')
+        .binary_regex_replace(b'security.securenvm.available', b'vendor.s.securenvm.available'),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     's5e8845-common',
     'samsung',

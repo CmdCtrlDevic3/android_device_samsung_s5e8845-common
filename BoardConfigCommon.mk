@@ -97,6 +97,9 @@ TARGET_BOOTLOADER_BOARD_NAME := s5e8845
 TARGET_SOC := s5e8845
 include hardware/samsung_slsi-linaro/config/BoardConfig8845.mk
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.s5e8845
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888

@@ -1,0 +1,7 @@
+# Vendor security patch level 2026-07-05
+
+# Weaver
+vendor/bin/hermesd
+vendor/lib64/libhermes.so
+vendor/lib64/libhwvault.so
+vendor/lib64/libisosechw.so

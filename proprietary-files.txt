@@ -1,2 +1,13 @@
 # All unpinned blobs are from A556BXXSGDZG2
 # Vendor security patch level 2026-07-05
+
+# Weaver
+vendor/etc/init/hermesd.rc
+vendor/lib64/libhermes_bdbridge.so
+vendor/lib64/libhermes_cred.so
+vendor/lib64/libshctrl.so
+vendor/lib64/vendor.samsung.hardware.security.drk-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
+vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so
+vendor/etc/vintf/manifest/iweaver_aidl_v2_manifest.xml
+vendor/lib64/android.hardware.weaver@1.0.so:vendor/lib64/android.weaver@1.0.so;FIX_SONAME

@@ -1,0 +1,3 @@
+# Weaver
+vendor.s.securehw.available=false
+vendor.s.securenvm.available=false
