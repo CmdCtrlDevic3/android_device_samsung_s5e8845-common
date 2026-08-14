@@ -54,6 +54,13 @@ def rename_dynamic_symbol(
         )
 
 blob_fixups: blob_fixups_user_type = {
+   (
+        'vendor/lib64/hw/audio.primary.s5e8845.so',
+        'vendor/lib64/libaudioproxy2.so',
+        'vendor/lib64/libaudioparamupdate.so',
+    ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_samsung.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa_samsung.so'),
     'vendor/bin/hermesd': blob_fixup()
         .binary_regex_replace(b'security.securehw.available', b'vendor.s.securehw.available')
         .binary_regex_replace(b'security.securenvm.available', b'vendor.s.securenvm.available'),
@@ -63,6 +70,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
     'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('-service', '-service.samsung'),
+    (
+        'vendor/lib64/libalsautils_sec.so',
+        'vendor/lib64/libaudioroute_samsung.so',
+    ): blob_fixup()
+        .replace_needed('libtinyalsa.so', 'libtinyalsa_samsung.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

@@ -19,6 +19,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@7.1-impl \
+    android.hardware.bluetooth.audio-impl \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usbv2.default
+
 $(call soong_config_set_bool,frameworks_av,use_aosp_audio_policy_volumes,true)
 $(call soong_config_set_bool,frameworks_av,use_aosp_default_volume_tables,true)
 $(call soong_config_set_bool,frameworks_av,use_aosp_r_submix_audio_policy_configuration,true)
