@@ -74,6 +74,9 @@ vendor/lib64/egl/libGLESv2_samsung.so
 vendor/lib64/hw/vulkan.samsung.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libSGPUOpenCL.so
+vendor/lib64/libdisplaycolor_default.so
+vendor/lib64/libhdrwrapper.so
+vendor/lib64/vendor.samsung.libcolor.custom.so
 
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
