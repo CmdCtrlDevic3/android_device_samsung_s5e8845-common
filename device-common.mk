@@ -48,6 +48,16 @@ PRODUCT_PACKAGES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.1-service \
+    libbt-vendor
+
+PRODUCT_COPY_FILES += \
+    hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
+    hardware/samsung_slsi/libbt/conf/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf
+
 # Codec2
 PRODUCT_PACKAGES += \
     samsung.hardware.media.c2-service \
@@ -154,6 +164,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/samsung \
     hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
+    hardware/samsung_slsi/libbt
 
 # Linker
 PRODUCT_PACKAGES += \
