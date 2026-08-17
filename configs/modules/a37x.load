@@ -110,6 +110,8 @@ scsi_srpmb.ko
 spidev.ko
 spi-s3c64xx.ko
 scsc_wifilogger.ko
+rfkill.ko
+cfg80211.ko
 dwc3-exynos-usb.ko
 xhci-exynos.ko
 xhci-exynos-audio.ko

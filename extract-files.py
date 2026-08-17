@@ -96,6 +96,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(
             'vendor\\.samsung\\.hardware\\.gnss\\.lsi\\.rose-service\n',
             'vendor.samsung.hardware.gnss-service\n'),
+        'vendor/etc/init.insmod.vendor_dlkm.cfg': blob_fixup()
+        .regex_replace(
+            r'net/wireless/cfg80211\.ko\n'
+            r'drivers/net/wireless/scsc/scsc_wlan\.ko\n'
+            r'drivers/samsung/debug/sec_debug_ssld_info\.ko',
+            'drivers/net/wireless/scsc/scsc_wlan.ko\n',
+        ),
     (
         'vendor/lib64/hw/vulkan.samsung.so',
         'vendor/lib64/libSGPUOpenCL.so',
