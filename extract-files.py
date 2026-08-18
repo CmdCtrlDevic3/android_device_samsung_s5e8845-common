@@ -89,7 +89,9 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libtinyalsa.so', 'libtinyalsa_samsung.so'),
     'vendor/lib64/hw/camera.s5e8845.so': blob_fixup()
-       .add_needed('libui_shim.so'),
+        .sig_replace('e7 89 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::enable m_sendRequest()
+        .sig_replace('92 89 01 94', '1f 20 03 d5') # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
