@@ -58,22 +58,6 @@ vendor/firmware/volumemonitor.bin
 vendor/firmware/a2dpcom.bin
 vendor/firmware/lc3enc.bin
 
-# DQE
-vendor/etc/dqe/calib_data_atc.xml
-vendor/etc/dqe/calib_data_colormode0.xml
-vendor/etc/dqe/calib_data_colormode0_off.xml
-vendor/etc/dqe/DQE_coef_data.xml
-vendor/etc/dqe/calib_data_whitepoint.xml
-vendor/etc/dqe/calib_data_skincolor.xml
-vendor/etc/dqe/calib_data_rgbgain.xml
-vendor/etc/dqe/calib_data_eyetemp.xml
-vendor/etc/dqe/calib_data_colortemp.xml
-vendor/etc/dqe/calib_data_bypass.xml
-
-# Fingerprint - Dependencies
-vendor/etc/init/init.fingerprint.rc
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
-
 # Camera
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
@@ -101,12 +85,24 @@ vendor/firmware/OD_V3.4.10_11_17_QVGA_ROSE_ENN_BGRA.nnc
 vendor/firmware/OD_V3.5.3_06_12_VGA_ROSE_ENN_BGRA.nnc
 vendor/firmware/secure_configuration.flm.cfg.bin
 
-# TEEgris
-vendor/bin/tzdaemon
-vendor/bin/tzts_daemon
-vendor/etc/init/teegris.rc
-vendor/lib64/libteecl.so
-vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+# DQE
+vendor/etc/dqe/calib_data_atc.xml
+vendor/etc/dqe/calib_data_colormode0.xml
+vendor/etc/dqe/calib_data_colormode0_off.xml
+vendor/etc/dqe/DQE_coef_data.xml
+vendor/etc/dqe/calib_data_whitepoint.xml
+vendor/etc/dqe/calib_data_skincolor.xml
+vendor/etc/dqe/calib_data_rgbgain.xml
+vendor/etc/dqe/calib_data_eyetemp.xml
+vendor/etc/dqe/calib_data_colortemp.xml
+vendor/etc/dqe/calib_data_bypass.xml
+
+# DRM - Widevine
+vendor/apex/com.google.android.widevine.nonupdatable.apex
+
+# Fingerprint - Dependencies
+vendor/etc/init/init.fingerprint.rc
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 
 # ENN
 vendor/lib64/libenn_common_utils.so
@@ -143,21 +139,11 @@ vendor/lib64/libdisplaycolor_default.so
 vendor/lib64/libhdrwrapper.so
 vendor/lib64/vendor.samsung.libcolor.custom.so
 
-# DRM - Widevine
-vendor/apex/com.google.android.widevine.nonupdatable.apex
-
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so
-
-# Sensors
-vendor/etc/init/init.sensorhub.rc
-vendor/lib64/sensors.inputvirtual.so
-
-# Vibrator
-vendor/firmware/cs40l26.wmfw
 
 # RIL
 vendor/bin/dmd
@@ -191,6 +177,20 @@ vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
+
+# Sensors
+vendor/etc/init/init.sensorhub.rc
+vendor/lib64/sensors.inputvirtual.so
+
+# TEEgris
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris.rc
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+
+# Vibrator
+vendor/firmware/cs40l26.wmfw
 
 # Weaver
 vendor/etc/init/hermesd.rc
