@@ -28,6 +28,9 @@ vendor/etc/media_profiles_V1_0.xml
 # Keymint
 vendor/lib64/libskeymint_cli.so
 
+# Sensors
+vendor/lib64/sensors.sensorhub.so
+
 # Weaver
 vendor/bin/hermesd
 vendor/lib64/libhermes.so

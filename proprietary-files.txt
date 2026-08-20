@@ -114,6 +114,10 @@ vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/and
 vendor/lib64/libskeymint10device.so
 vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so
 
+# Sensors
+vendor/etc/init/init.sensorhub.rc
+vendor/lib64/sensors.inputvirtual.so
+
 # Weaver
 vendor/etc/init/hermesd.rc
 vendor/lib64/libhermes_bdbridge.so
