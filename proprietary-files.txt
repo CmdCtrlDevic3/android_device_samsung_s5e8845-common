@@ -222,3 +222,7 @@ vendor/firmware/wifi/mx140_wlan_sw.hcf
 vendor/firmware/wifi/mx140_wlan_t.hcf
 vendor/firmware/wifi/mx140_wlan_t_sw.hcf
 vendor/firmware/wifi/platform.txt
+
+# Wpa supplicant
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
