@@ -118,6 +118,9 @@ vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so
 vendor/etc/init/init.sensorhub.rc
 vendor/lib64/sensors.inputvirtual.so
 
+# Vibrator
+vendor/firmware/cs40l26.wmfw
+
 # Weaver
 vendor/etc/init/hermesd.rc
 vendor/lib64/libhermes_bdbridge.so
