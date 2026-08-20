@@ -42,6 +42,22 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 vendor/etc/sound_trigger_info.xml
 vendor/lib64/hw/sound_trigger.primary.s5e8845.so
 
+# Audio - Firmware
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/abox_system.conf
+vendor/firmware/avsyncmix.bin
+vendor/firmware/dax_param.bin
+vendor/firmware/dolby.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/sectiongraph_tplg.bin
+vendor/firmware/sectiongraph_tplg.conf
+vendor/firmware/volctrl.bin
+vendor/firmware/volumemonitor.bin
+
+# Bluetooth
+vendor/firmware/a2dpcom.bin
+vendor/firmware/lc3enc.bin
+
 # DQE
 vendor/etc/dqe/calib_data_atc.xml
 vendor/etc/dqe/calib_data_colormode0.xml

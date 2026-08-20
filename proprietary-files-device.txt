@@ -15,6 +15,26 @@ vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
 
+# Audio - Firmware
+vendor/firmware/APDVRX_AUDIO_SLSI.bin
+vendor/firmware/APDVTX_AUDIO_SLSI.bin
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/SoundAlive.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/abox_solution.conf
+vendor/firmware/abox_solution_rev00.conf
+vendor/firmware/abox_solution_ti.conf
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/calliope_dram.bin
+vendor/firmware/sb_ll.bin
+vendor/firmware/sb_music.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/spkamp.bin
+
+# Bluetooth
+vendor/firmware/lc3dec.bin
+
 # Camera
 vendor/lib64/hw/camera.s5e8845.so
 vendor/lib64/libIRTA.so
