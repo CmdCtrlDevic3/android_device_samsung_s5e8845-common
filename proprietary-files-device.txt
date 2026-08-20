@@ -42,6 +42,11 @@ vendor/lib64/libeis_core.so
 vendor/lib64/libeis_interface.so
 vendor/lib64/libsec2lsi_conversion.so
 
+# Camera - Firmware
+vendor/firmware/is_mcu_fw.bin
+vendor/firmware/rear3_dualcal_param.bin
+vendor/firmware/setfile_imx906.bin
+
 # Codec2
 vendor/etc/media_profiles_V1_0.xml
 

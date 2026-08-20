@@ -88,6 +88,15 @@ vendor/lib64/libvpl.so
 vendor/lib64/vendor.samsung.hardware.thermal-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
+# Camera - Firmware
+vendor/firmware/camera_tilt_calibration_info_1_2
+vendor/firmware/compress_capture.bin
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/icc_profile.bin
+vendor/firmware/OD_V3.4.10_11_17_QVGA_ROSE_ENN_BGRA.nnc
+vendor/firmware/OD_V3.5.3_06_12_VGA_ROSE_ENN_BGRA.nnc
+vendor/firmware/secure_configuration.flm.cfg.bin
+
 # TEEgris
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
